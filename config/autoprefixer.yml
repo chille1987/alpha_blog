@@ -1,0 +1,5 @@
+browsers:
+  - "> 5%" #targeting the top 1% of browsers 
+  - "last 2 versions" #Support only the latest 2 major browser versions except for the following
+  - "IE >= 11" # IE is 11 or more
+  - "Android >= 4" # Android supports system 4
