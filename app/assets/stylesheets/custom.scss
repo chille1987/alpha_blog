@@ -1,0 +1,31 @@
+@import 'bootstrap/dist/css/bootstrap';
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
+nav.navbar {
+  background-color: black!important;
+  .navbar-brand, .nav-link {
+    color: #FFFFFF!important;
+  }
+  .nav-item {
+    .nav-link {
+      opacity: .8;
+    }
+    &:hover, &.active {
+      .nav-link {
+        opacity: 1;
+      }
+    }
+  }
+}

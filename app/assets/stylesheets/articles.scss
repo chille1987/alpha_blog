@@ -1,18 +1,6 @@
 #all-articles {
-  max-width: 1200px;
-  margin: 50px auto;
-  .navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-  }
   .article {
-    
-    .actions {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+    margin-left: auto;
+    margin-right: auto;
   }
 }
