@@ -1,7 +1,7 @@
 <div class="jumbotron">
   <div class="container text-center">
     <h1 class="display-4"><%= @article.title %></h1>
-    <p><strong>Created at: </strong><%= time_ago_in_words(@article.created_at) %> ago</p>
+    <p><strong>Created at: </strong><%= time_ago_in_words(@article.created_at) %> ago, <strong>Author: </strong> <%= @article.user.username %></p>
   </div>
 </div>
 

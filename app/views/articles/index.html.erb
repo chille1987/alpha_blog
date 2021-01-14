@@ -7,7 +7,7 @@
       <div class="article col-8 justify-content-md-center">
         <div class="card text-center mb-4 shadow-sm">
           <div class="card-header">
-            by Denis Omerovic
+            by <%= article.user.username %>
           </div>
           <div class="card-body">
             <h5 class="card-title"><%= link_to article.title, article_path(article) %></h5>
