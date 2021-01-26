@@ -16,12 +16,21 @@
       </li>
     </ul>
     <ul class="navbar-nav mb-0">
-      <li class="nav-item">
-        <a class="btn btn-outline-light btn-sm" href="#" role="button">Log In</a>
+      <% if logged_in? %>
+      <li class="nav-item ml-3">
+        <%= link_to current_user.username, user_path(current_user), class: "text-white" %>
       </li>
       <li class="nav-item ml-3">
-        <%= link_to  "Sign Up", signup_path, class: "btn btn-primary btn-sm" %>
+        <%= link_to  "Log Out", logout_path, class: "btn btn-outline-primary btn-sm", method: :delete %>
       </li>
+      <% else %>
+        <li class="nav-item">
+          <%= link_to  "Log In", login_path, class: "btn btn-outline-primary btn-sm" %>
+        </li>
+        <li class="nav-item ml-3">
+          <%= link_to  "Sign Up", signup_path, class: "btn btn-primary btn-sm" %>
+        </li>
+      <% end %>
     </ul>
   </div>
 </nav>
